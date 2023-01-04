@@ -3,9 +3,9 @@
 }
 
 :root {
-    --primary: darkolivegreen; /*text colour*/
-    --secondary: tan; /*highlight colour*/
-    --tertiary: lemonchiffon; /*background colour*/
+    --primary: #ffd7c2; /*text colour*/
+    --secondary: #fa6244a2; /*highlight colour*/
+    --tertiary: #6a342a; /*background colour*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,8 +54,8 @@ nav a {
 }
 
 .hero {
-    background-image: url("https://thumbs.dreamstime.com/b/binary-code-matrix-background-wide-banner-green-106448184.jpg");
-    background-size: 100% 40px;
+    background-image: url("https://as1.ftcdn.net/v2/jpg/04/81/66/42/1000_F_481664230_hTAQ6UQcArAboLze8bWsDBjyV9dG0JM5.jpg");
+    background-size: 200% 50px;
     background-position: center;
     text-align: right;
     margin: 0;

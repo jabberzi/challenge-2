@@ -54,19 +54,23 @@ nav a {
 }
 
 .hero {
+    background-color: var(--tertiary);
     background-image: url("https://as1.ftcdn.net/v2/jpg/04/81/66/42/1000_F_481664230_hTAQ6UQcArAboLze8bWsDBjyV9dG0JM5.jpg");
-    background-size: 200% 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-position: center;
-    text-align: right;
     margin: 0;
     padding: 2% 4%;
     display: flex;
     justify-content: space-between;
+    align-items: end;
 }
 
 .hero h2 {
     background-color: var(--secondary);
-    text-align: right;
+    text-align: justify;
+    font-size: 2rem;
+    margin-right: 20px;
 }
 
 
@@ -119,5 +123,6 @@ nav a {
 }
 
 #avatar {
-    block-size: 170px;
+    block-size: 190px;
+    padding: 5px;
 }

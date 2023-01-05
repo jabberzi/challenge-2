@@ -122,6 +122,28 @@ nav a {
     border-bottom: 2px solid var(--primary);
 }
 
+.projects {
+    display: flex;
+    flex-basis: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--secondary);
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+#main-project {
+    display: flex;
+    flex-basis: 100%;
+}
+
+#secondary-projects {
+    display: flex;
+    flex-basis: 50%;
+}
+
 #avatar {
     block-size: 190px;
     padding: 5px;

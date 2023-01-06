@@ -3,9 +3,10 @@
 }
 
 :root {
-    --primary: #ffd7c2; /*text colour*/
-    --secondary: #fa6244a2; /*highlight colour*/
-    --tertiary: #6a342a; /*background colour*/
+    --primary: #ffd7c2; /*text*/
+    --secondary: #fd7054; /*light background*/
+    --tertiary: #6a342a; /*dark background*/
+    --highlight: #fa6244a2; /*highlight*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,7 +69,6 @@ nav a {
 
 .hero h2 {
     background-color: var(--secondary);
-    text-align: justify;
     font-size: 2rem;
     margin-right: 20px;
 }
@@ -76,7 +76,7 @@ nav a {
 
 .page-wrapper {
     max-width: 85%;
-    margin: 10px auto;
+    margin: auto;
 }
 
 .page-content {
@@ -92,7 +92,8 @@ nav a {
     text-align: right;
     padding-right: 10px;
     border-right: 2px solid var(--primary);
-    font-size: 2.5rem;
+    font-size: 3rem;
+    flex: 0 0 20%;
 }
 
 .about {
@@ -107,10 +108,44 @@ nav a {
     margin-bottom: 10px;
 }
 
+.projects-container {
+    display: flex;
+    flex-basis: 70%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    display: flex;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--secondary);
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    justify-content: flex-start;
+}
+
+.project div {
+    background-color: var(--secondary);
+    align-self: center;
+    text-align: left;
+    padding: 0 3px;
+}
+
+.project h3 {
+    font-size: 1em;
+}
+
+.project h4 {
+    font-size: 0.7em;
+}
+
 .contact {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-basis: 70%;
 }
 
@@ -122,43 +157,34 @@ nav a {
     border-bottom: 2px solid var(--primary);
 }
 
-.projects {
-    display: flex;
-    flex-basis: 70%;
-    flex-wrap: wrap;
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--secondary);
-    margin-bottom: 4px;
-    text-align: center;
+#main {
+    background-image: url("../images/summit1.png");
+    height: 100%;
+    flex: 2 1 100%;
 }
 
-#project-1 {
-    background-image: url("summit1.png");
-    block-size: ;
-    flex-grow: 2;
+#second {
+    background-image: url("../images/shadow pfp.jpg");
+    height: 100%;
+    flex: 1 1 45%;
 }
 
-#project-2 {
-    background-image: url("shadow pfp.jpg");
-    block-size: ;
+#third {
+    background-image: url("../images/snoopy sleeping.png");
+    height: 100%;
+    flex: 1 1 45%;
 }
 
-#project-3 {
-    background-image: url("snoopy sleeping.png");
-    block-size: ;
+#fourth {
+    background-image: url("../images/girls.png");
+    height: 100%;
+    flex: 1 1 45%;
 }
 
-#project-4 {
-    background-image: url("summit1.png");
-    block-size: ;
-    flex-grow: 2;
-}
-
-#project-5 {
-    background-image: url("summit1.png");
-    block-size: ;
-    flex-grow: 2;
+#fifth {
+    background-image: url("../images/tiny head seal.jpg");
+    height: 100%;
+    flex: 1 1 45%;
 }
 
 #avatar {

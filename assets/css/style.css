@@ -37,7 +37,7 @@ header {
 }
 
 /*My name*/
-header h1 {
+header > h1 {
     background-color: var(--secondary);
     font-size: 4rem;
     padding: 6px 2% 6px 6%;
@@ -52,7 +52,7 @@ nav {
 }
 
 /*Nav links*/
-nav a {
+nav > a {
     color: var(--secondary);
     margin: 5px 20px;
     font-size: 1.5rem;
@@ -61,6 +61,7 @@ nav a {
     border-bottom: 4px solid var(--secondary);
 }
 
+/*Hero Banner*/
 .hero {
     background-color: var(--tertiary);
     background-image: url("https://as1.ftcdn.net/v2/jpg/04/81/66/42/1000_F_481664230_hTAQ6UQcArAboLze8bWsDBjyV9dG0JM5.jpg");
@@ -74,10 +75,11 @@ nav a {
     align-items: end;
 }
 
-.hero h2 {
+.hero > h2 {
     background-color: var(--secondary);
     font-size: 2rem;
     margin-right: 20px;
+    padding: 2px;
 }
 
 .page-wrapper {
@@ -85,6 +87,7 @@ nav a {
     margin: auto;
 }
 
+/*Body container*/
 .page-content {
     display: flex;
     flex-direction: row;
@@ -94,7 +97,7 @@ nav a {
 }
 
 /*Section Titles*/
-.page-content h2 {
+.page-content > h2 {
     text-align: right;
     padding: 0 2% 0 0;
     border-right: 2px solid var(--primary);
@@ -115,7 +118,7 @@ nav a {
     justify-content: start;
 }
 
-.about p {
+.about > p {
     margin-bottom: 10px;
 }
 
@@ -149,7 +152,7 @@ nav a {
 }
 
 /*Work Card titles*/
-.project-item div {
+.project-item > div {
     background-color: var(--secondary);
     margin-bottom: 2%;
     align-self: flex-end;
@@ -157,11 +160,11 @@ nav a {
     padding: 3px;
 }
 
-.project-item h3 {
+.project-item > h3 {
     font-size: 1.5em;
 }
 
-.project-item h4 {
+.project-item > h4 {
     font-size: 1em;
 }
 
@@ -173,7 +176,7 @@ nav a {
 }
 
 /*Contact links*/
-.contact a {
+.contact > a {
     font-size: 1.5rem;
     text-decoration: none;
     font-style: normal;

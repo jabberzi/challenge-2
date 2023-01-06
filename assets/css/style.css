@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/*Set colour palette*/
 :root {
     --primary: #ffd7c2; /*text*/
     --secondary: #fd7054; /*light background*/
@@ -12,7 +13,8 @@
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
-  
+
+/*Set basic styles*/
 body {
     font-family: Arial;
     font-size: 100%;
@@ -25,7 +27,7 @@ body {
   
 header {
     margin: 0;
-    padding: 20px 5px 10px 0px;
+    padding: 20px 0px 10px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -34,12 +36,14 @@ header {
     background-color: var(--primary);
 }
 
+/*My name*/
 header h1 {
     background-color: var(--secondary);
     font-size: 4rem;
     padding: 6px 2% 6px 6%;
 }
 
+/*Nav box*/
 nav {
     display: flex;
     flex-direction: row;
@@ -47,6 +51,7 @@ nav {
     justify-content: space-between;
 }
 
+/*Nav links*/
 nav a {
     color: var(--secondary);
     margin: 5px 20px;
@@ -75,7 +80,6 @@ nav a {
     margin-right: 20px;
 }
 
-
 .page-wrapper {
     max-width: 90%;
     margin: auto;
@@ -89,6 +93,7 @@ nav a {
     justify-content: space-between;
 }
 
+/*Section Titles*/
 .page-content h2 {
     text-align: right;
     padding: 0 2% 0 0;
@@ -97,12 +102,14 @@ nav a {
     flex: 0 0 20%;
 }
 
+/*General class for aboutme, work and contact content containers*/
 .flex-container {
     display: flex;
     flex-basis: 78%;
     padding: 0 0 0 2%;
 }
 
+/*About Me container*/
 .about {
     flex-direction: column;
     justify-content: start;
@@ -112,11 +119,13 @@ nav a {
     margin-bottom: 10px;
 }
 
+/*Work Cards container*/
 .projects {
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+/*Work Cards*/
 .project-item {
     display: flex;
     border-style: solid;
@@ -126,7 +135,7 @@ nav a {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    background-color: var(--highlight);
+    background-color: var(--highlight); /*highlight overlaying the images*/
     background-blend-mode: soft-light;
     justify-content: flex-start;
     min-height: 120px;
@@ -134,10 +143,12 @@ nav a {
     transition-duration: 1s;
 }
 
+/*Overlay fades on hover*/
 .project-item:hover {
-    background-color: rgba(0, 0, 0, 0.037);
+    background-color: rgba(0, 0, 0, 0.018);
 }
 
+/*Work Card titles*/
 .project-item div {
     background-color: var(--secondary);
     margin-bottom: 2%;
@@ -154,12 +165,14 @@ nav a {
     font-size: 1em;
 }
 
+/*Contact container*/
 .contact {
     justify-content: space-between;
     align-items: center;
     min-width: 780px;
 }
 
+/*Contact links*/
 .contact a {
     font-size: 1.5rem;
     text-decoration: none;
@@ -176,6 +189,7 @@ nav a {
     border-radius: 10px;
 }
 
+/*Most recent project is set larger than the rest*/
 #main {
     background-image: url("../images/summit1.png");
     min-height: 400px;
@@ -198,6 +212,7 @@ nav a {
     background-image: url("../images/seal.jpg");
 }
 
+/*Content is shown in a column on smaller screens, such as phones*/
 @media screen and (max-width: 980px) {
     header {
         flex-direction: column;

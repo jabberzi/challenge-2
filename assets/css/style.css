@@ -6,7 +6,7 @@
     --primary: #ffd7c2; /*text*/
     --secondary: #fd7054; /*light background*/
     --tertiary: #6a342a; /*dark background*/
-    --highlight: #fa6244a2; /*highlight*/
+    --highlight: #fa624478; /*highlight*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -75,7 +75,7 @@ nav a {
 
 
 .page-wrapper {
-    max-width: 85%;
+    max-width: 90%;
     margin: auto;
 }
 
@@ -83,8 +83,7 @@ nav a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 20px 0px;
-    padding: 5%;
+    padding: 2% 5%;
     justify-content: space-between;
 }
 
@@ -96,26 +95,29 @@ nav a {
     flex: 0 0 20%;
 }
 
-.about {
+.about-container {
     display: flex;
-    flex-basis: 70%;
+    flex-basis: 78%;
     flex-direction: column;
     padding-left: 2%;
     justify-content: start;
 }
 
-.about p {
+.about-container p {
     margin-bottom: 10px;
 }
 
 .projects-container {
     display: flex;
-    flex-basis: 70%;
+    flex-basis: 78%;
+    padding-left: 2%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.project {
+/*project should have a hover*/
+/*project images should appear faded without hover*/
+.project-item {
     display: flex;
     border-style: solid;
     border-width: 5px;
@@ -124,32 +126,44 @@ nav a {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+    background-color: var(--highlight);
+    background-blend-mode: soft-light;
     justify-content: flex-start;
+    min-height: 120px;
+    flex: 1 1 45%;
+    transition-duration: 1s;
 }
 
-.project div {
+.project-item:hover {
+    background-color: rgba(0, 0, 0, 0.037);
+}
+
+.project-item div {
     background-color: var(--secondary);
-    align-self: center;
+    margin-bottom: 2%;
+    align-self: flex-end;
     text-align: left;
-    padding: 0 3px;
+    padding: 3px;
 }
 
-.project h3 {
+.project-item h3 {
+    font-size: 1.5em;
+}
+
+.project-item h4 {
     font-size: 1em;
 }
 
-.project h4 {
-    font-size: 0.7em;
-}
-
-.contact {
+.contact-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-basis: 70%;
+    align-items: center;
+    flex-basis: 78%;
+    padding-left: 2%;
 }
 
-.contact a {
+.contact-container a {
     font-size: 1.5rem;
     text-decoration: none;
     font-style: normal;
@@ -157,37 +171,32 @@ nav a {
     border-bottom: 2px solid var(--primary);
 }
 
+#avatar {
+    block-size: 190px;
+    margin: 5px;
+    border-style: solid;
+    border-color: var(--tertiary);
+    border-radius: 10px;
+}
+
 #main {
     background-image: url("../images/summit1.png");
-    height: 100%;
+    min-height: 400px;
     flex: 2 1 100%;
 }
 
 #second {
     background-image: url("../images/shadow pfp.jpg");
-    height: 100%;
-    flex: 1 1 45%;
 }
 
 #third {
     background-image: url("../images/snoopy sleeping.png");
-    height: 100%;
-    flex: 1 1 45%;
 }
 
 #fourth {
     background-image: url("../images/girls.png");
-    height: 100%;
-    flex: 1 1 45%;
 }
 
 #fifth {
     background-image: url("../images/tiny head seal.jpg");
-    height: 100%;
-    flex: 1 1 45%;
-}
-
-#avatar {
-    block-size: 190px;
-    padding: 5px;
 }

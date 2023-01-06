@@ -17,7 +17,7 @@ Main image is by Amora Bettany, found at https://amorabettany.com/Celeste
 
 Second image is from Shadow the Hedgehog (2005)
 
-Third, Fourth, and Fifth images are from www.tumblr.com/puppibrain
+Third, Fourth, and Fifth images are from https://www.tumblr.com/puppibrain
 
 ## License
 

@@ -183,11 +183,11 @@ nav a {
 }
 
 #second {
-    background-image: url("../images/shadow pfp.jpg");
+    background-image: url("../images/shadow.jpg");
 }
 
 #third {
-    background-image: url("../images/snoopy sleeping.png");
+    background-image: url("../images/snoopy.png");
 }
 
 #fourth {
@@ -195,7 +195,7 @@ nav a {
 }
 
 #fifth {
-    background-image: url("../images/tiny head seal.jpg");
+    background-image: url("../images/seal.jpg");
 }
 
 @media screen and (max-width: 980px) {

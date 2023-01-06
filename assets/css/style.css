@@ -29,8 +29,8 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--primary);
 }
 
@@ -44,14 +44,16 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 nav a {
     color: var(--secondary);
-    margin: 0;
-    padding: 5px 20px;
-    margin-right: 10px;
+    margin: 5px 20px;
     font-size: 1.5rem;
+    text-decoration: none;
+    font-style: normal;
+    border-bottom: 4px solid var(--secondary);
 }
 
 .hero {
@@ -89,34 +91,32 @@ nav a {
 
 .page-content h2 {
     text-align: right;
-    padding-right: 10px;
+    padding: 0 2% 0 0;
     border-right: 2px solid var(--primary);
     font-size: 3rem;
     flex: 0 0 20%;
 }
 
-.about-container {
+.flex-container {
     display: flex;
     flex-basis: 78%;
+    padding: 0 0 0 2%;
+}
+
+.about {
     flex-direction: column;
-    padding-left: 2%;
     justify-content: start;
 }
 
-.about-container p {
+.about p {
     margin-bottom: 10px;
 }
 
-.projects-container {
-    display: flex;
-    flex-basis: 78%;
-    padding-left: 2%;
+.projects {
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-/*project should have a hover*/
-/*project images should appear faded without hover*/
 .project-item {
     display: flex;
     border-style: solid;
@@ -154,21 +154,17 @@ nav a {
     font-size: 1em;
 }
 
-.contact-container {
-    display: flex;
-    flex-direction: row;
+.contact {
     justify-content: space-between;
     align-items: center;
-    flex-basis: 78%;
-    padding-left: 2%;
 }
 
-.contact-container a {
+.contact a {
     font-size: 1.5rem;
     text-decoration: none;
     font-style: normal;
     color: var(--primary);
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 4px solid var(--primary);
 }
 
 #avatar {
@@ -199,4 +195,30 @@ nav a {
 
 #fifth {
     background-image: url("../images/tiny head seal.jpg");
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header h1 {
+        padding: 6px 2%;
+    }
+
+    .page-content {
+        flex-direction: column;
+    }
+
+    .page-content h2 {
+        text-align: center;
+        padding: 2% 0;
+        border-right: none;
+        border-bottom: 2px solid var(--primary);
+    }
+
+    .flex-container {
+        padding: 2% 0;
+    }
 }

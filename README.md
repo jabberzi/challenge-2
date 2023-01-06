@@ -1,73 +1,25 @@
-# Challenge-2
-
-A portfolio page displaying my photo, contact information, and (in the future) applications that I have made.
-
-https://as1.ftcdn.net/v2/jpg/04/81/66/42/1000_F_481664230_hTAQ6UQcArAboLze8bWsDBjyV9dG0JM5.jpg
-
-https://www.tumblr.com/puppibrain/703105195194859520/boyfriend-here-world-needs-to-see-the-image
-
-# <Your-Project-Title>
+# <Challenge-2>
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+A portfolio page displaying my photo, contact information, and applications that I have made. A portfolio is important for people, including potential employers, to view my recent work. This website displays all relevant information in a clean and aesthetically pleasing manner. Building the site helped me to better understand the box model and flexbox functions.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+![a screenshot of the website](assets/images/screenshot.png)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Hero image courtesy of Adobe Stock
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+Main image is by Amora Bettany, found at https://amorabettany.com/Celeste
 
-If you followed tutorials, include links to those here as well.
+Second image is from Shadow the Hedgehog (2005)
+
+Third, Fourth, and Fifth images are from www.tumblr.com/puppibrain
 
 ## License
 
 The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
 

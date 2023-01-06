@@ -157,6 +157,7 @@ nav a {
 .contact {
     justify-content: space-between;
     align-items: center;
+    min-width: 780px;
 }
 
 .contact a {

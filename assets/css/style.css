@@ -199,13 +199,13 @@ nav > a {
 
 /*Most recent project is set larger than the rest*/
 #main {
-  background-image: url("../images/audio-news.png");
+  background-image: url("../images/vetsetgo.png");
   min-height: 400px;
   flex: 2 1 100%;
 }
 
 #second {
-  background-image: url("../images/shadow.jpg");
+  background-image: url("../images/audio-news.png");
 }
 
 #third {
